@@ -200,42 +200,42 @@
 
 
 # virtual methods
-.method public callSessionConferenceExtendFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionConferenceExtendFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 0
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 471
     return-void
 .end method
 
-.method public callSessionConferenceExtendReceived(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+.method public callSessionConferenceExtendReceived(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
     .locals 0
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
     .param p2, "newSession"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p3, "profile"    # Lcom/android/ims/ImsCallProfile;
+    .param p3, "profile"    # Landroid/telephony/ims/ImsCallProfile;
 
     .prologue
     .line 473
     return-void
 .end method
 
-.method public callSessionConferenceExtended(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+.method public callSessionConferenceExtended(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
     .locals 0
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
     .param p2, "newSession"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p3, "profile"    # Lcom/android/ims/ImsCallProfile;
+    .param p3, "profile"    # Landroid/telephony/ims/ImsCallProfile;
 
     .prologue
     .line 469
     return-void
 .end method
 
-.method public callSessionConferenceStateUpdated(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsConferenceState;)V
+.method public callSessionConferenceStateUpdated(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsConferenceState;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "state"    # Lcom/android/ims/ImsConferenceState;
+    .param p2, "state"    # Landroid/telephony/ims/ImsConferenceState;
 
     .prologue
     .line 524
@@ -246,7 +246,7 @@
     .line 525
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$21;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$21;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsConferenceState;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$21;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsConferenceState;)V
 
     .line 536
     .local v0, "r":Ljava/lang/Runnable;
@@ -258,12 +258,12 @@
     return-void
 .end method
 
-.method public callSessionHandover(Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+.method public callSessionHandover(Lcom/android/ims/internal/IImsCallSession;IILandroid/telephony/ims/ImsReasonInfo;)V
     .locals 6
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
     .param p2, "srcAccessTech"    # I
     .param p3, "targetAccessTech"    # I
-    .param p4, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p4, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 145
@@ -284,7 +284,7 @@
 
     move-object v5, p4
 
-    invoke-direct/range {v0 .. v5}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$5;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+    invoke-direct/range {v0 .. v5}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$5;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;IILandroid/telephony/ims/ImsReasonInfo;)V
 
     .line 158
     .local v0, "r":Ljava/lang/Runnable;
@@ -296,12 +296,12 @@
     return-void
 .end method
 
-.method public callSessionHandoverFailed(Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+.method public callSessionHandoverFailed(Lcom/android/ims/internal/IImsCallSession;IILandroid/telephony/ims/ImsReasonInfo;)V
     .locals 6
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
     .param p2, "srcAccessTech"    # I
     .param p3, "targetAccessTech"    # I
-    .param p4, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p4, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 165
@@ -322,7 +322,7 @@
 
     move-object v5, p4
 
-    invoke-direct/range {v0 .. v5}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$6;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+    invoke-direct/range {v0 .. v5}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$6;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;IILandroid/telephony/ims/ImsReasonInfo;)V
 
     .line 178
     .local v0, "r":Ljava/lang/Runnable;
@@ -334,10 +334,10 @@
     return-void
 .end method
 
-.method public callSessionHeld(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+.method public callSessionHeld(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "profile"    # Lcom/android/ims/ImsCallProfile;
+    .param p2, "profile"    # Landroid/telephony/ims/ImsCallProfile;
 
     .prologue
     .line 246
@@ -348,7 +348,7 @@
     .line 247
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$8;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$8;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$8;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
 
     .line 258
     .local v0, "r":Ljava/lang/Runnable;
@@ -360,10 +360,10 @@
     return-void
 .end method
 
-.method public callSessionHoldFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionHoldFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 265
@@ -374,7 +374,7 @@
     .line 266
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$9;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$9;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$9;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     .line 276
     .local v0, "r":Ljava/lang/Runnable;
@@ -386,10 +386,10 @@
     return-void
 .end method
 
-.method public callSessionHoldReceived(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+.method public callSessionHoldReceived(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "profile"    # Lcom/android/ims/ImsCallProfile;
+    .param p2, "profile"    # Landroid/telephony/ims/ImsCallProfile;
 
     .prologue
     .line 283
@@ -400,7 +400,7 @@
     .line 284
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$10;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$10;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$10;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
 
     .line 294
     .local v0, "r":Ljava/lang/Runnable;
@@ -437,10 +437,10 @@
     return-void
 .end method
 
-.method public callSessionInviteParticipantsRequestFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionInviteParticipantsRequestFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 498
@@ -451,7 +451,7 @@
     .line 499
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$20;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$20;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$20;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     .line 511
     .local v0, "r":Ljava/lang/Runnable;
@@ -488,10 +488,10 @@
     return-void
 .end method
 
-.method public callSessionMergeFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionMergeFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 404
@@ -502,7 +502,7 @@
     .line 405
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$16;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$16;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$16;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     .line 416
     .local v0, "r":Ljava/lang/Runnable;
@@ -514,11 +514,11 @@
     return-void
 .end method
 
-.method public callSessionMergeStarted(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+.method public callSessionMergeStarted(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
     .param p2, "newSession"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p3, "profile"    # Lcom/android/ims/ImsCallProfile;
+    .param p3, "profile"    # Landroid/telephony/ims/ImsCallProfile;
 
     .prologue
     .line 358
@@ -529,7 +529,7 @@
     .line 359
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$14;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$14;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$14;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
 
     .line 370
     .local v0, "r":Ljava/lang/Runnable;
@@ -567,10 +567,10 @@
     return-void
 .end method
 
-.method public callSessionProgressing(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsStreamMediaProfile;)V
+.method public callSessionProgressing(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsStreamMediaProfile;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "profile"    # Lcom/android/ims/ImsStreamMediaProfile;
+    .param p2, "profile"    # Landroid/telephony/ims/ImsStreamMediaProfile;
 
     .prologue
     .line 81
@@ -581,7 +581,7 @@
     .line 82
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$2;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$2;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsStreamMediaProfile;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$2;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsStreamMediaProfile;)V
 
     .line 93
     .local v0, "r":Ljava/lang/Runnable;
@@ -602,20 +602,20 @@
     return-void
 .end method
 
-.method public callSessionRemoveParticipantsRequestFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionRemoveParticipantsRequestFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 0
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 517
     return-void
 .end method
 
-.method public callSessionResumeFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionResumeFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 317
@@ -626,7 +626,7 @@
     .line 318
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$12;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$12;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$12;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     .line 328
     .local v0, "r":Ljava/lang/Runnable;
@@ -638,10 +638,10 @@
     return-void
 .end method
 
-.method public callSessionResumeReceived(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+.method public callSessionResumeReceived(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "profile"    # Lcom/android/ims/ImsCallProfile;
+    .param p2, "profile"    # Landroid/telephony/ims/ImsCallProfile;
 
     .prologue
     .line 334
@@ -652,7 +652,7 @@
     .line 335
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$13;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$13;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$13;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
 
     .line 345
     .local v0, "r":Ljava/lang/Runnable;
@@ -664,10 +664,10 @@
     return-void
 .end method
 
-.method public callSessionResumed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+.method public callSessionResumed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "profile"    # Lcom/android/ims/ImsCallProfile;
+    .param p2, "profile"    # Landroid/telephony/ims/ImsCallProfile;
 
     .prologue
     .line 300
@@ -678,7 +678,7 @@
     .line 301
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$11;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$11;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$11;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
 
     .line 311
     .local v0, "r":Ljava/lang/Runnable;
@@ -690,10 +690,10 @@
     return-void
 .end method
 
-.method public callSessionRetryErrorReceived(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionRetryErrorReceived(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 545
@@ -716,10 +716,10 @@
     return-void
 .end method
 
-.method public callSessionStartFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionStartFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reason"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reason"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 62
@@ -730,7 +730,7 @@
     .line 63
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$1;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$1;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$1;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     .line 73
     .local v0, "r":Ljava/lang/Runnable;
@@ -742,10 +742,10 @@
     return-void
 .end method
 
-.method public callSessionStarted(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+.method public callSessionStarted(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "profile"    # Lcom/android/ims/ImsCallProfile;
+    .param p2, "profile"    # Landroid/telephony/ims/ImsCallProfile;
 
     .prologue
     .line 101
@@ -756,7 +756,7 @@
     .line 102
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$3;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$3;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$3;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
 
     .line 113
     .local v0, "r":Ljava/lang/Runnable;
@@ -768,10 +768,10 @@
     return-void
 .end method
 
-.method public callSessionSuppServiceReceived(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsSuppServiceNotification;)V
+.method public callSessionSuppServiceReceived(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsSuppServiceNotification;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "suppServiceInfo"    # Lcom/android/ims/ImsSuppServiceNotification;
+    .param p2, "suppServiceInfo"    # Landroid/telephony/ims/ImsSuppServiceNotification;
 
     .prologue
     .line 445
@@ -782,7 +782,7 @@
     .line 446
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$18;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$18;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsSuppServiceNotification;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$18;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsSuppServiceNotification;)V
 
     .line 456
     .local v0, "r":Ljava/lang/Runnable;
@@ -794,10 +794,10 @@
     return-void
 .end method
 
-.method public callSessionTerminated(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionTerminated(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reason"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reason"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 120
@@ -808,7 +808,7 @@
     .line 121
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$4;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$4;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$4;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
 
     .line 132
     .local v0, "r":Ljava/lang/Runnable;
@@ -846,30 +846,30 @@
     return-void
 .end method
 
-.method public callSessionUpdateFailed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+.method public callSessionUpdateFailed(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsReasonInfo;)V
     .locals 0
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
+    .param p2, "reasonInfo"    # Landroid/telephony/ims/ImsReasonInfo;
 
     .prologue
     .line 461
     return-void
 .end method
 
-.method public callSessionUpdateReceived(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+.method public callSessionUpdateReceived(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
     .locals 0
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "profile"    # Lcom/android/ims/ImsCallProfile;
+    .param p2, "profile"    # Landroid/telephony/ims/ImsCallProfile;
 
     .prologue
     .line 463
     return-void
 .end method
 
-.method public callSessionUpdated(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+.method public callSessionUpdated(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
     .locals 2
     .param p1, "session"    # Lcom/android/ims/internal/IImsCallSession;
-    .param p2, "profile"    # Lcom/android/ims/ImsCallProfile;
+    .param p2, "profile"    # Landroid/telephony/ims/ImsCallProfile;
 
     .prologue
     .line 425
@@ -880,7 +880,7 @@
     .line 426
     new-instance v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$17;
 
-    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$17;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-direct {v0, p0, p1, p2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$17;-><init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
 
     .line 436
     .local v0, "r":Ljava/lang/Runnable;

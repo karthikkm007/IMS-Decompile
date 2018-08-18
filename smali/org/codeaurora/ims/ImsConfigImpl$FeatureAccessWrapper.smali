@@ -17,7 +17,7 @@
 # instance fields
 .field public feature:I
 
-.field public listener:Lcom/android/ims/ImsConfigListener;
+.field public listener:Landroid/telephony/ims/ImsConfigListener;
 
 .field public network:I
 
@@ -25,12 +25,12 @@
 
 
 # direct methods
-.method public constructor <init>(IIILcom/android/ims/ImsConfigListener;)V
+.method public constructor <init>(IIILandroid/telephony/ims/ImsConfigListener;)V
     .locals 0
     .param p1, "feature"    # I
     .param p2, "network"    # I
     .param p3, "value"    # I
-    .param p4, "listener"    # Lcom/android/ims/ImsConfigListener;
+    .param p4, "listener"    # Landroid/telephony/ims/ImsConfigListener;
 
     .prologue
     .line 61
@@ -43,7 +43,7 @@
     iput p2, p0, Lorg/codeaurora/ims/ImsConfigImpl$FeatureAccessWrapper;->network:I
 
     .line 65
-    iput-object p4, p0, Lorg/codeaurora/ims/ImsConfigImpl$FeatureAccessWrapper;->listener:Lcom/android/ims/ImsConfigListener;
+    iput-object p4, p0, Lorg/codeaurora/ims/ImsConfigImpl$FeatureAccessWrapper;->listener:Landroid/telephony/ims/ImsConfigListener;
 
     .line 66
     iput p3, p0, Lorg/codeaurora/ims/ImsConfigImpl$FeatureAccessWrapper;->value:I
