@@ -31,7 +31,7 @@
 
 .field private final READ_PRIVILEGED_PHONE_STATE:Ljava/lang/String;
 
-.field private final mBinder:Lcom/android/ims/internal/IImsService$Stub;
+.field private final mBinder:Landroid/telephony/ims/IImsService$Stub;
 
 .field private mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
@@ -160,7 +160,7 @@
 
     invoke-direct {v0, p0}, Lorg/codeaurora/ims/ImsService$2;-><init>(Lorg/codeaurora/ims/ImsService;)V
 
-    iput-object v0, p0, Lorg/codeaurora/ims/ImsService;->mBinder:Lcom/android/ims/internal/IImsService$Stub;
+    iput-object v0, p0, Lorg/codeaurora/ims/ImsService;->mBinder:Landroid/telephony/ims/IImsService$Stub;
 
     .line 55
     return-void
@@ -917,7 +917,7 @@
     :cond_0
     const-string/jumbo v2, "ims"
 
-    iget-object v3, p0, Lorg/codeaurora/ims/ImsService;->mBinder:Lcom/android/ims/internal/IImsService$Stub;
+    iget-object v3, p0, Lorg/codeaurora/ims/ImsService;->mBinder:Landroid/telephony/ims/IImsService$Stub;
 
     invoke-static {v2, v3}, Landroid/os/ServiceManager;->addService(Ljava/lang/String;Landroid/os/IBinder;)V
 

@@ -1,5 +1,5 @@
 .class public Lorg/codeaurora/ims/ImsEcbmImpl;
-.super Lcom/android/ims/internal/IImsEcbm$Stub;
+.super Landroid/telephony/ims/IImsEcbm$Stub;
 .source "ImsEcbmImpl.java"
 
 
@@ -20,25 +20,25 @@
 
 .field private mHandler:Landroid/os/Handler;
 
-.field private mListener:Lcom/android/ims/internal/IImsEcbmListener;
+.field private mListener:Landroid/telephony/ims/IImsEcbmListener;
 
 
 # direct methods
-.method static synthetic -get0(Lorg/codeaurora/ims/ImsEcbmImpl;)Lcom/android/ims/internal/IImsEcbmListener;
+.method static synthetic -get0(Lorg/codeaurora/ims/ImsEcbmImpl;)Landroid/telephony/ims/IImsEcbmListener;
     .locals 1
 
-    iget-object v0, p0, Lorg/codeaurora/ims/ImsEcbmImpl;->mListener:Lcom/android/ims/internal/IImsEcbmListener;
+    iget-object v0, p0, Lorg/codeaurora/ims/ImsEcbmImpl;->mListener:Landroid/telephony/ims/IImsEcbmListener;
 
     return-object v0
 .end method
 
-.method static synthetic -wrap0(Lorg/codeaurora/ims/ImsEcbmImpl;Lcom/android/ims/internal/IImsEcbmListener;Z)V
+.method static synthetic -wrap0(Lorg/codeaurora/ims/ImsEcbmImpl;Landroid/telephony/ims/IImsEcbmListener;Z)V
     .locals 0
-    .param p1, "listener"    # Lcom/android/ims/internal/IImsEcbmListener;
+    .param p1, "listener"    # Landroid/telephony/ims/IImsEcbmListener;
     .param p2, "isEntered"    # Z
 
     .prologue
-    invoke-direct {p0, p1, p2}, Lorg/codeaurora/ims/ImsEcbmImpl;->createEcbmCallBackThread(Lcom/android/ims/internal/IImsEcbmListener;Z)V
+    invoke-direct {p0, p1, p2}, Lorg/codeaurora/ims/ImsEcbmImpl;->createEcbmCallBackThread(Landroid/telephony/ims/IImsEcbmListener;Z)V
 
     return-void
 .end method
@@ -55,7 +55,7 @@
     const/4 v2, 0x0
 
     .line 26
-    invoke-direct {p0}, Lcom/android/ims/internal/IImsEcbm$Stub;-><init>()V
+    invoke-direct {p0}, Landroid/telephony/ims/IImsEcbm$Stub;-><init>()V
 
     .line 19
     iput v3, p0, Lorg/codeaurora/ims/ImsEcbmImpl;->EVENT_ENTER_EMERGENCY_CALLBACK_MODE:I
@@ -91,16 +91,16 @@
     return-void
 .end method
 
-.method private createEcbmCallBackThread(Lcom/android/ims/internal/IImsEcbmListener;Z)V
+.method private createEcbmCallBackThread(Landroid/telephony/ims/IImsEcbmListener;Z)V
     .locals 4
-    .param p1, "listener"    # Lcom/android/ims/internal/IImsEcbmListener;
+    .param p1, "listener"    # Landroid/telephony/ims/IImsEcbmListener;
     .param p2, "isEntered"    # Z
 
     .prologue
     .line 52
     new-instance v0, Lorg/codeaurora/ims/ImsEcbmImpl$1;
 
-    invoke-direct {v0, p0, p2, p1}, Lorg/codeaurora/ims/ImsEcbmImpl$1;-><init>(Lorg/codeaurora/ims/ImsEcbmImpl;ZLcom/android/ims/internal/IImsEcbmListener;)V
+    invoke-direct {v0, p0, p2, p1}, Lorg/codeaurora/ims/ImsEcbmImpl$1;-><init>(Lorg/codeaurora/ims/ImsEcbmImpl;ZLandroid/telephony/ims/IImsEcbmListener;)V
 
     .line 66
     .local v0, "r":Ljava/lang/Runnable;
@@ -157,13 +157,13 @@
     return-void
 .end method
 
-.method public setListener(Lcom/android/ims/internal/IImsEcbmListener;)V
+.method public setListener(Landroid/telephony/ims/IImsEcbmListener;)V
     .locals 0
-    .param p1, "listener"    # Lcom/android/ims/internal/IImsEcbmListener;
+    .param p1, "listener"    # Landroid/telephony/ims/IImsEcbmListener;
 
     .prologue
     .line 38
-    iput-object p1, p0, Lorg/codeaurora/ims/ImsEcbmImpl;->mListener:Lcom/android/ims/internal/IImsEcbmListener;
+    iput-object p1, p0, Lorg/codeaurora/ims/ImsEcbmImpl;->mListener:Landroid/telephony/ims/IImsEcbmListener;
 
     .line 37
     return-void

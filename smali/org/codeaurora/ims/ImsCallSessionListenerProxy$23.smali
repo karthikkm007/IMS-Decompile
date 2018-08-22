@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionMultipartyStateChanged(Lcom/android/ims/internal/IImsCallSession;Z)V
+    value = Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionMultipartyStateChanged(Landroid/telephony/ims/IImsCallSession;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,21 +22,21 @@
 
 .field final synthetic val$isMultiParty:Z
 
-.field final synthetic val$session:Lcom/android/ims/internal/IImsCallSession;
+.field final synthetic val$session:Landroid/telephony/ims/IImsCallSession;
 
 
 # direct methods
-.method constructor <init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Z)V
+.method constructor <init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Landroid/telephony/ims/IImsCallSession;Z)V
     .locals 0
     .param p1, "this$0"    # Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
-    .param p2, "val$session"    # Lcom/android/ims/internal/IImsCallSession;
+    .param p2, "val$session"    # Landroid/telephony/ims/IImsCallSession;
     .param p3, "val$isMultiParty"    # Z
 
     .prologue
     .line 570
     iput-object p1, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$23;->this$0:Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
 
-    iput-object p2, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$23;->val$session:Lcom/android/ims/internal/IImsCallSession;
+    iput-object p2, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$23;->val$session:Landroid/telephony/ims/IImsCallSession;
 
     iput-boolean p3, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$23;->val$isMultiParty:Z
 
@@ -60,13 +60,13 @@
     .line 575
     iget-object v1, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$23;->this$0:Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
 
-    iget-object v1, v1, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->mListener:Lcom/android/ims/internal/IImsCallSessionListener;
+    iget-object v1, v1, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->mListener:Landroid/telephony/ims/IImsCallSessionListener;
 
-    iget-object v2, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$23;->val$session:Lcom/android/ims/internal/IImsCallSession;
+    iget-object v2, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$23;->val$session:Landroid/telephony/ims/IImsCallSession;
 
     iget-boolean v3, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$23;->val$isMultiParty:Z
 
-    invoke-interface {v1, v2, v3}, Lcom/android/ims/internal/IImsCallSessionListener;->callSessionMultipartyStateChanged(Lcom/android/ims/internal/IImsCallSession;Z)V
+    invoke-interface {v1, v2, v3}, Landroid/telephony/ims/IImsCallSessionListener;->callSessionMultipartyStateChanged(Landroid/telephony/ims/IImsCallSession;Z)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lorg/codeaurora/ims/ImsEcbmImpl;->createEcbmCallBackThread(Lcom/android/ims/internal/IImsEcbmListener;Z)V
+    value = Lorg/codeaurora/ims/ImsEcbmImpl;->createEcbmCallBackThread(Landroid/telephony/ims/IImsEcbmListener;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,15 +22,15 @@
 
 .field final synthetic val$isEntered:Z
 
-.field final synthetic val$listener:Lcom/android/ims/internal/IImsEcbmListener;
+.field final synthetic val$listener:Landroid/telephony/ims/IImsEcbmListener;
 
 
 # direct methods
-.method constructor <init>(Lorg/codeaurora/ims/ImsEcbmImpl;ZLcom/android/ims/internal/IImsEcbmListener;)V
+.method constructor <init>(Lorg/codeaurora/ims/ImsEcbmImpl;ZLandroid/telephony/ims/IImsEcbmListener;)V
     .locals 0
     .param p1, "this$0"    # Lorg/codeaurora/ims/ImsEcbmImpl;
     .param p2, "val$isEntered"    # Z
-    .param p3, "val$listener"    # Lcom/android/ims/internal/IImsEcbmListener;
+    .param p3, "val$listener"    # Landroid/telephony/ims/IImsEcbmListener;
 
     .prologue
     .line 52
@@ -38,7 +38,7 @@
 
     iput-boolean p2, p0, Lorg/codeaurora/ims/ImsEcbmImpl$1;->val$isEntered:Z
 
-    iput-object p3, p0, Lorg/codeaurora/ims/ImsEcbmImpl$1;->val$listener:Lcom/android/ims/internal/IImsEcbmListener;
+    iput-object p3, p0, Lorg/codeaurora/ims/ImsEcbmImpl$1;->val$listener:Landroid/telephony/ims/IImsEcbmListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,9 +58,9 @@
     if-eqz v1, :cond_0
 
     .line 57
-    iget-object v1, p0, Lorg/codeaurora/ims/ImsEcbmImpl$1;->val$listener:Lcom/android/ims/internal/IImsEcbmListener;
+    iget-object v1, p0, Lorg/codeaurora/ims/ImsEcbmImpl$1;->val$listener:Landroid/telephony/ims/IImsEcbmListener;
 
-    invoke-interface {v1}, Lcom/android/ims/internal/IImsEcbmListener;->enteredECBM()V
+    invoke-interface {v1}, Landroid/telephony/ims/IImsEcbmListener;->enteredECBM()V
 
     .line 54
     :goto_0
@@ -68,9 +68,9 @@
 
     .line 59
     :cond_0
-    iget-object v1, p0, Lorg/codeaurora/ims/ImsEcbmImpl$1;->val$listener:Lcom/android/ims/internal/IImsEcbmListener;
+    iget-object v1, p0, Lorg/codeaurora/ims/ImsEcbmImpl$1;->val$listener:Landroid/telephony/ims/IImsEcbmListener;
 
-    invoke-interface {v1}, Lcom/android/ims/internal/IImsEcbmListener;->exitedECBM()V
+    invoke-interface {v1}, Landroid/telephony/ims/IImsEcbmListener;->exitedECBM()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 

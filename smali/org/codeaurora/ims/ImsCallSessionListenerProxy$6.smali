@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionHandoverFailed(Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+    value = Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionHandoverFailed(Landroid/telephony/ims/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,7 +22,7 @@
 
 .field final synthetic val$reasonInfo:Lcom/android/ims/ImsReasonInfo;
 
-.field final synthetic val$session:Lcom/android/ims/internal/IImsCallSession;
+.field final synthetic val$session:Landroid/telephony/ims/IImsCallSession;
 
 .field final synthetic val$srcAccessTech:I
 
@@ -30,10 +30,10 @@
 
 
 # direct methods
-.method constructor <init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+.method constructor <init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Landroid/telephony/ims/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
     .locals 0
     .param p1, "this$0"    # Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
-    .param p2, "val$session"    # Lcom/android/ims/internal/IImsCallSession;
+    .param p2, "val$session"    # Landroid/telephony/ims/IImsCallSession;
     .param p3, "val$srcAccessTech"    # I
     .param p4, "val$targetAccessTech"    # I
     .param p5, "val$reasonInfo"    # Lcom/android/ims/ImsReasonInfo;
@@ -42,7 +42,7 @@
     .line 166
     iput-object p1, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$6;->this$0:Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
 
-    iput-object p2, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$6;->val$session:Lcom/android/ims/internal/IImsCallSession;
+    iput-object p2, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$6;->val$session:Landroid/telephony/ims/IImsCallSession;
 
     iput p3, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$6;->val$srcAccessTech:I
 
@@ -70,9 +70,9 @@
     .line 171
     iget-object v1, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$6;->this$0:Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
 
-    iget-object v1, v1, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->mListener:Lcom/android/ims/internal/IImsCallSessionListener;
+    iget-object v1, v1, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->mListener:Landroid/telephony/ims/IImsCallSessionListener;
 
-    iget-object v2, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$6;->val$session:Lcom/android/ims/internal/IImsCallSession;
+    iget-object v2, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$6;->val$session:Landroid/telephony/ims/IImsCallSession;
 
     iget v3, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$6;->val$srcAccessTech:I
 
@@ -82,7 +82,7 @@
     iget-object v5, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$6;->val$reasonInfo:Lcom/android/ims/ImsReasonInfo;
 
     .line 171
-    invoke-interface {v1, v2, v3, v4, v5}, Lcom/android/ims/internal/IImsCallSessionListener;->callSessionHandoverFailed(Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+    invoke-interface {v1, v2, v3, v4, v5}, Landroid/telephony/ims/IImsCallSessionListener;->callSessionHandoverFailed(Landroid/telephony/ims/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 

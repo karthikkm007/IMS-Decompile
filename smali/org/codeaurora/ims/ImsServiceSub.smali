@@ -185,7 +185,7 @@
         value = {
             "Ljava/util/concurrent/CopyOnWriteArrayList",
             "<",
-            "Lcom/android/ims/internal/IImsRegistrationListener;",
+            "Landroid/telephony/ims/IImsRegistrationListener;",
             ">;"
         }
     .end annotation
@@ -197,7 +197,7 @@
             "Ljava/util/Map",
             "<",
             "Ljava/lang/Integer;",
-            "Lcom/android/ims/internal/IImsRegistrationListener;",
+            "Landroid/telephony/ims/IImsRegistrationListener;",
             ">;"
         }
     .end annotation
@@ -1371,7 +1371,7 @@
             "()",
             "Ljava/util/List",
             "<",
-            "Lcom/android/ims/internal/IImsRegistrationListener;",
+            "Landroid/telephony/ims/IImsRegistrationListener;",
             ">;"
         }
     .end annotation
@@ -6108,10 +6108,10 @@
     goto :goto_0
 .end method
 
-.method addRegistrationListener(ILcom/android/ims/internal/IImsRegistrationListener;)V
+.method addRegistrationListener(ILandroid/telephony/ims/IImsRegistrationListener;)V
     .locals 1
     .param p1, "serviceClass"    # I
-    .param p2, "listener"    # Lcom/android/ims/internal/IImsRegistrationListener;
+    .param p2, "listener"    # Landroid/telephony/ims/IImsRegistrationListener;
 
     .prologue
     .line 2082
@@ -6196,11 +6196,11 @@
     goto :goto_0
 .end method
 
-.method public createCallSession(ILcom/android/ims/ImsCallProfile;Lcom/android/ims/internal/IImsCallSessionListener;)Lorg/codeaurora/ims/ImsCallSessionImpl;
+.method public createCallSession(ILcom/android/ims/ImsCallProfile;Landroid/telephony/ims/IImsCallSessionListener;)Lorg/codeaurora/ims/ImsCallSessionImpl;
     .locals 4
     .param p1, "serviceId"    # I
     .param p2, "profile"    # Lcom/android/ims/ImsCallProfile;
-    .param p3, "listener"    # Lcom/android/ims/internal/IImsCallSessionListener;
+    .param p3, "listener"    # Landroid/telephony/ims/IImsCallSessionListener;
 
     .prologue
     .line 375
@@ -6253,7 +6253,7 @@
     .line 380
     .restart local v0    # "session":Lorg/codeaurora/ims/ImsCallSessionImpl;
     :cond_0
-    invoke-virtual {v1, p2, p3}, Lorg/codeaurora/ims/ImsServiceClassTracker;->createCallSession(Lcom/android/ims/ImsCallProfile;Lcom/android/ims/internal/IImsCallSessionListener;)Lorg/codeaurora/ims/ImsCallSessionImpl;
+    invoke-virtual {v1, p2, p3}, Lorg/codeaurora/ims/ImsServiceClassTracker;->createCallSession(Lcom/android/ims/ImsCallProfile;Landroid/telephony/ims/IImsCallSessionListener;)Lorg/codeaurora/ims/ImsCallSessionImpl;
 
     move-result-object v0
 
@@ -6452,7 +6452,7 @@
     return-object v0
 .end method
 
-.method public getEcbmInterface()Lcom/android/ims/internal/IImsEcbm;
+.method public getEcbmInterface()Landroid/telephony/ims/IImsEcbm;
     .locals 1
 
     .prologue
@@ -6616,11 +6616,11 @@
     return-object v0
 .end method
 
-.method public getServiceId(ILandroid/app/PendingIntent;Lcom/android/ims/internal/IImsRegistrationListener;)I
+.method public getServiceId(ILandroid/app/PendingIntent;Landroid/telephony/ims/IImsRegistrationListener;)I
     .locals 7
     .param p1, "serviceClass"    # I
     .param p2, "intent"    # Landroid/app/PendingIntent;
-    .param p3, "listener"    # Lcom/android/ims/internal/IImsRegistrationListener;
+    .param p3, "listener"    # Landroid/telephony/ims/IImsRegistrationListener;
 
     .prologue
     .line 324
@@ -7421,10 +7421,10 @@
     goto :goto_0
 .end method
 
-.method removeRegistrationListener(ILcom/android/ims/internal/IImsRegistrationListener;)V
+.method removeRegistrationListener(ILandroid/telephony/ims/IImsRegistrationListener;)V
     .locals 1
     .param p1, "serviceClass"    # I
-    .param p2, "listener"    # Lcom/android/ims/internal/IImsRegistrationListener;
+    .param p2, "listener"    # Landroid/telephony/ims/IImsRegistrationListener;
 
     .prologue
     .line 2092
@@ -8269,10 +8269,10 @@
     return-void
 .end method
 
-.method public setRegistrationListener(ILcom/android/ims/internal/IImsRegistrationListener;)V
+.method public setRegistrationListener(ILandroid/telephony/ims/IImsRegistrationListener;)V
     .locals 3
     .param p1, "serviceId"    # I
-    .param p2, "listener"    # Lcom/android/ims/internal/IImsRegistrationListener;
+    .param p2, "listener"    # Landroid/telephony/ims/IImsRegistrationListener;
 
     .prologue
     .line 446

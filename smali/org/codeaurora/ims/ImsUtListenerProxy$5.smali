@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationCallBarringQueried(Lcom/android/ims/internal/IImsUt;I[Lcom/android/ims/ImsSsInfo;)V
+    value = Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationCallBarringQueried(Landroid/telephony/ims/IImsUt;I[Lcom/android/ims/ImsSsInfo;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,14 +24,14 @@
 
 .field final synthetic val$id:I
 
-.field final synthetic val$ut:Lcom/android/ims/internal/IImsUt;
+.field final synthetic val$ut:Landroid/telephony/ims/IImsUt;
 
 
 # direct methods
-.method constructor <init>(Lorg/codeaurora/ims/ImsUtListenerProxy;Lcom/android/ims/internal/IImsUt;I[Lcom/android/ims/ImsSsInfo;)V
+.method constructor <init>(Lorg/codeaurora/ims/ImsUtListenerProxy;Landroid/telephony/ims/IImsUt;I[Lcom/android/ims/ImsSsInfo;)V
     .locals 0
     .param p1, "this$0"    # Lorg/codeaurora/ims/ImsUtListenerProxy;
-    .param p2, "val$ut"    # Lcom/android/ims/internal/IImsUt;
+    .param p2, "val$ut"    # Landroid/telephony/ims/IImsUt;
     .param p3, "val$id"    # I
     .param p4, "val$cbInfo"    # [Lcom/android/ims/ImsSsInfo;
 
@@ -39,7 +39,7 @@
     .line 102
     iput-object p1, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$5;->this$0:Lorg/codeaurora/ims/ImsUtListenerProxy;
 
-    iput-object p2, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$5;->val$ut:Lcom/android/ims/internal/IImsUt;
+    iput-object p2, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$5;->val$ut:Landroid/telephony/ims/IImsUt;
 
     iput p3, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$5;->val$id:I
 
@@ -60,15 +60,15 @@
     :try_start_0
     iget-object v1, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$5;->this$0:Lorg/codeaurora/ims/ImsUtListenerProxy;
 
-    iget-object v1, v1, Lorg/codeaurora/ims/ImsUtListenerProxy;->mListener:Lcom/android/ims/internal/IImsUtListener;
+    iget-object v1, v1, Lorg/codeaurora/ims/ImsUtListenerProxy;->mListener:Landroid/telephony/ims/IImsUtListener;
 
-    iget-object v2, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$5;->val$ut:Lcom/android/ims/internal/IImsUt;
+    iget-object v2, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$5;->val$ut:Landroid/telephony/ims/IImsUt;
 
     iget v3, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$5;->val$id:I
 
     iget-object v4, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$5;->val$cbInfo:[Lcom/android/ims/ImsSsInfo;
 
-    invoke-interface {v1, v2, v3, v4}, Lcom/android/ims/internal/IImsUtListener;->utConfigurationCallBarringQueried(Lcom/android/ims/internal/IImsUt;I[Lcom/android/ims/ImsSsInfo;)V
+    invoke-interface {v1, v2, v3, v4}, Landroid/telephony/ims/IImsUtListener;->utConfigurationCallBarringQueried(Landroid/telephony/ims/IImsUt;I[Lcom/android/ims/ImsSsInfo;)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 

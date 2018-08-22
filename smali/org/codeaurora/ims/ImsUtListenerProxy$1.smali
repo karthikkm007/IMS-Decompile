@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Lcom/android/ims/internal/IImsUt;I)V
+    value = Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Landroid/telephony/ims/IImsUt;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,21 +22,21 @@
 
 .field final synthetic val$id:I
 
-.field final synthetic val$ut:Lcom/android/ims/internal/IImsUt;
+.field final synthetic val$ut:Landroid/telephony/ims/IImsUt;
 
 
 # direct methods
-.method constructor <init>(Lorg/codeaurora/ims/ImsUtListenerProxy;Lcom/android/ims/internal/IImsUt;I)V
+.method constructor <init>(Lorg/codeaurora/ims/ImsUtListenerProxy;Landroid/telephony/ims/IImsUt;I)V
     .locals 0
     .param p1, "this$0"    # Lorg/codeaurora/ims/ImsUtListenerProxy;
-    .param p2, "val$ut"    # Lcom/android/ims/internal/IImsUt;
+    .param p2, "val$ut"    # Landroid/telephony/ims/IImsUt;
     .param p3, "val$id"    # I
 
     .prologue
     .line 24
     iput-object p1, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$1;->this$0:Lorg/codeaurora/ims/ImsUtListenerProxy;
 
-    iput-object p2, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$1;->val$ut:Lcom/android/ims/internal/IImsUt;
+    iput-object p2, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$1;->val$ut:Landroid/telephony/ims/IImsUt;
 
     iput p3, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$1;->val$id:I
 
@@ -55,13 +55,13 @@
     :try_start_0
     iget-object v1, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$1;->this$0:Lorg/codeaurora/ims/ImsUtListenerProxy;
 
-    iget-object v1, v1, Lorg/codeaurora/ims/ImsUtListenerProxy;->mListener:Lcom/android/ims/internal/IImsUtListener;
+    iget-object v1, v1, Lorg/codeaurora/ims/ImsUtListenerProxy;->mListener:Landroid/telephony/ims/IImsUtListener;
 
-    iget-object v2, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$1;->val$ut:Lcom/android/ims/internal/IImsUt;
+    iget-object v2, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$1;->val$ut:Landroid/telephony/ims/IImsUt;
 
     iget v3, p0, Lorg/codeaurora/ims/ImsUtListenerProxy$1;->val$id:I
 
-    invoke-interface {v1, v2, v3}, Lcom/android/ims/internal/IImsUtListener;->utConfigurationUpdated(Lcom/android/ims/internal/IImsUt;I)V
+    invoke-interface {v1, v2, v3}, Landroid/telephony/ims/IImsUtListener;->utConfigurationUpdated(Landroid/telephony/ims/IImsUt;I)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 

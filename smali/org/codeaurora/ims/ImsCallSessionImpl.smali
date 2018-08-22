@@ -1,5 +1,5 @@
 .class public Lorg/codeaurora/ims/ImsCallSessionImpl;
-.super Lcom/android/ims/internal/IImsCallSession$Stub;
+.super Landroid/telephony/ims/IImsCallSession$Stub;
 .source "ImsCallSessionImpl.java"
 
 
@@ -400,7 +400,7 @@
     const/4 v2, 0x0
 
     .line 145
-    invoke-direct {p0}, Lcom/android/ims/internal/IImsCallSession$Stub;-><init>()V
+    invoke-direct {p0}, Landroid/telephony/ims/IImsCallSession$Stub;-><init>()V
 
     .line 103
     iput-object v3, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mDc:Lorg/codeaurora/ims/DriverCallIms;
@@ -541,10 +541,10 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/android/ims/ImsCallProfile;Lcom/android/ims/internal/IImsCallSessionListener;Lorg/codeaurora/ims/ImsSenderRxr;Landroid/content/Context;Lorg/codeaurora/ims/ImsServiceClassTracker;Z)V
+.method public constructor <init>(Lcom/android/ims/ImsCallProfile;Landroid/telephony/ims/IImsCallSessionListener;Lorg/codeaurora/ims/ImsSenderRxr;Landroid/content/Context;Lorg/codeaurora/ims/ImsServiceClassTracker;Z)V
     .locals 4
     .param p1, "profile"    # Lcom/android/ims/ImsCallProfile;
-    .param p2, "listener"    # Lcom/android/ims/internal/IImsCallSessionListener;
+    .param p2, "listener"    # Landroid/telephony/ims/IImsCallSessionListener;
     .param p3, "senderRxr"    # Lorg/codeaurora/ims/ImsSenderRxr;
     .param p4, "context"    # Landroid/content/Context;
     .param p5, "tracker"    # Lorg/codeaurora/ims/ImsServiceClassTracker;
@@ -555,12 +555,12 @@
     invoke-direct {p0, p4, p3, p5, p6}, Lorg/codeaurora/ims/ImsCallSessionImpl;-><init>(Landroid/content/Context;Lorg/codeaurora/ims/ImsSenderRxr;Lorg/codeaurora/ims/ImsServiceClassTracker;Z)V
 
     .line 181
-    invoke-virtual {p0, p2}, Lorg/codeaurora/ims/ImsCallSessionImpl;->setListener(Lcom/android/ims/internal/IImsCallSessionListener;)V
+    invoke-virtual {p0, p2}, Lorg/codeaurora/ims/ImsCallSessionImpl;->setListener(Landroid/telephony/ims/IImsCallSessionListener;)V
 
     .line 182
     iget-object v0, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mListenerProxy:Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
 
-    iput-object p2, v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->mListener:Lcom/android/ims/internal/IImsCallSessionListener;
+    iput-object p2, v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->mListener:Landroid/telephony/ims/IImsCallSessionListener;
 
     .line 183
     iput-object p1, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mCallProfile:Lcom/android/ims/ImsCallProfile;
@@ -2531,7 +2531,7 @@
 
     iget-object v2, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mCallProfile:Lcom/android/ims/ImsCallProfile;
 
-    invoke-virtual {v1, p0, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionUpdated(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-virtual {v1, p0, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionUpdated(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
 
     .line 550
     :cond_0
@@ -3736,7 +3736,7 @@
     iget-boolean v3, v3, Lorg/codeaurora/ims/DriverCallIms;->isMpty:Z
 
     .line 349
-    invoke-virtual {v2, p0, v3}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionMultipartyStateChanged(Lcom/android/ims/internal/IImsCallSession;Z)V
+    invoke-virtual {v2, p0, v3}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionMultipartyStateChanged(Landroid/telephony/ims/IImsCallSession;Z)V
 
     .line 354
     :cond_1
@@ -4533,7 +4533,7 @@
     return v0
 .end method
 
-.method public getVideoCallProvider()Lcom/android/ims/internal/IImsVideoCallProvider;
+.method public getVideoCallProvider()Landroid/telephony/ims/IImsVideoCallProvider;
     .locals 2
 
     .prologue
@@ -4566,7 +4566,7 @@
     :cond_1
     iget-object v0, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mImsVideoCallProviderImpl:Lcom/qualcomm/ims/vt/ImsVideoCallProviderImpl;
 
-    invoke-virtual {v0}, Lcom/qualcomm/ims/vt/ImsVideoCallProviderImpl;->getInterface()Lcom/android/ims/internal/IImsVideoCallProvider;
+    invoke-virtual {v0}, Lcom/qualcomm/ims/vt/ImsVideoCallProviderImpl;->getInterface()Landroid/telephony/ims/IImsVideoCallProvider;
 
     move-result-object v0
 
@@ -4687,7 +4687,7 @@
     invoke-direct {v2, v0, v3, p7}, Lcom/android/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 849
-    invoke-virtual {v1, p0, p2, p3, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionHandover(Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v1, p0, p2, p3, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionHandover(Landroid/telephony/ims/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
 
     .line 856
     iget-boolean v1, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mIsCarrierOneSupported:Z
@@ -4771,7 +4771,7 @@
     invoke-direct {v2, v0, v3, p7}, Lcom/android/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 872
-    invoke-virtual {v1, p0, p2, p3, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionHandoverFailed(Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v1, p0, p2, p3, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionHandoverFailed(Landroid/telephony/ims/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
 
     goto :goto_0
 
@@ -4788,7 +4788,7 @@
     invoke-direct {v2, v0, v3, p7}, Lcom/android/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 877
-    invoke-virtual {v1, p0, p2, p3, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionHandoverFailed(Lcom/android/ims/internal/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v1, p0, p2, p3, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionHandoverFailed(Landroid/telephony/ims/IImsCallSession;IILcom/android/ims/ImsReasonInfo;)V
 
     goto :goto_0
 
@@ -5440,7 +5440,7 @@
     iget-object v1, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mImsConferenceState:Lcom/android/ims/ImsConferenceState;
 
     .line 2122
-    invoke-virtual {v0, p0, v1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionConferenceStateUpdated(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsConferenceState;)V
+    invoke-virtual {v0, p0, v1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionConferenceStateUpdated(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsConferenceState;)V
 
     .line 2116
     :cond_1
@@ -5491,7 +5491,7 @@
     .line 776
     iget-object v0, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mListenerProxy:Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
 
-    invoke-virtual {v0, p0, p1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionTtyModeReceived(Lcom/android/ims/internal/IImsCallSession;I)V
+    invoke-virtual {v0, p0, p1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionTtyModeReceived(Landroid/telephony/ims/IImsCallSession;I)V
 
     .line 769
     :goto_0
@@ -5865,7 +5865,7 @@
     move-result-object v1
 
     .line 1369
-    invoke-virtual {v0, p0, p1, v1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionMergeStarted(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-virtual {v0, p0, p1, v1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionMergeStarted(Landroid/telephony/ims/IImsCallSession;Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
 
     .line 1366
     :goto_0
@@ -6034,9 +6034,9 @@
     return-void
 .end method
 
-.method public setListener(Lcom/android/ims/internal/IImsCallSessionListener;)V
+.method public setListener(Landroid/telephony/ims/IImsCallSessionListener;)V
     .locals 1
-    .param p1, "listener"    # Lcom/android/ims/internal/IImsCallSessionListener;
+    .param p1, "listener"    # Landroid/telephony/ims/IImsCallSessionListener;
 
     .prologue
     .line 1345
@@ -6052,7 +6052,7 @@
     :cond_0
     iget-object v0, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mListenerProxy:Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
 
-    iput-object p1, v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->mListener:Lcom/android/ims/internal/IImsCallSessionListener;
+    iput-object p1, v0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->mListener:Landroid/telephony/ims/IImsCallSessionListener;
 
     .line 1344
     return-void
@@ -6252,7 +6252,7 @@
 
     iget-object v1, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mCallProfile:Lcom/android/ims/ImsCallProfile;
 
-    invoke-virtual {v0, p0, v1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionUpdated(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-virtual {v0, p0, v1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionUpdated(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
 
     .line 1752
     iget-boolean v0, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mIsLowBattery:Z
@@ -6636,7 +6636,7 @@
 
     .prologue
     .line 2211
-    invoke-super {p0}, Lcom/android/ims/internal/IImsCallSession$Stub;->toString()Ljava/lang/String;
+    invoke-super {p0}, Landroid/telephony/ims/IImsCallSession$Stub;->toString()Ljava/lang/String;
 
     move-result-object v0
 
@@ -6968,7 +6968,7 @@
 
     iget-object v4, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mCallProfile:Lcom/android/ims/ImsCallProfile;
 
-    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionStarted(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionStarted(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
 
     goto :goto_0
 
@@ -7015,7 +7015,7 @@
 
     iget-object v4, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mCallProfile:Lcom/android/ims/ImsCallProfile;
 
-    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionStarted(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionStarted(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
 
     goto :goto_0
 
@@ -7065,7 +7065,7 @@
 
     iget-object v4, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mCallProfile:Lcom/android/ims/ImsCallProfile;
 
-    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionResumed(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionResumed(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
 
     goto/16 :goto_0
 
@@ -7120,7 +7120,7 @@
 
     iget-object v4, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mCallProfile:Lcom/android/ims/ImsCallProfile;
 
-    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionHeld(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionHeld(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
 
     goto/16 :goto_0
 
@@ -7154,7 +7154,7 @@
     invoke-direct {v4}, Lcom/android/ims/ImsStreamMediaProfile;-><init>()V
 
     .line 446
-    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionProgressing(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsStreamMediaProfile;)V
+    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionProgressing(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsStreamMediaProfile;)V
 
     .line 450
     :cond_9
@@ -7219,7 +7219,7 @@
     .line 467
     iget-object v3, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mListenerProxy:Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
 
-    invoke-virtual {v3, p0, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionProgressing(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsStreamMediaProfile;)V
+    invoke-virtual {v3, p0, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionProgressing(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsStreamMediaProfile;)V
 
     .line 470
     .end local v2    # "mediaProfile":Lcom/android/ims/ImsStreamMediaProfile;
@@ -7396,7 +7396,7 @@
     invoke-direct {v4, v7, v5, v6}, Lcom/android/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 509
-    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionTerminated(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionTerminated(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
 
     .line 525
     :cond_10
@@ -7434,7 +7434,7 @@
     invoke-direct {v4, v7, v5, v6}, Lcom/android/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 502
-    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionTerminated(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionTerminated(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
 
     goto :goto_3
 
@@ -7446,7 +7446,7 @@
     iget-object v4, p1, Lorg/codeaurora/ims/DriverCallIms;->callFailCause:Lcom/android/ims/ImsReasonInfo;
 
     .line 514
-    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionTerminated(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionTerminated(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
 
     goto :goto_3
 
@@ -7477,7 +7477,7 @@
     invoke-direct {v4, v5, v6, v7}, Lcom/android/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     .line 520
-    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionTerminated(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v3, p0, v4}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionTerminated(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsReasonInfo;)V
 
     goto :goto_3
 
@@ -7670,7 +7670,7 @@
 
     iget-object v1, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mCallProfile:Lcom/android/ims/ImsCallProfile;
 
-    invoke-virtual {v0, p0, v1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionUpdated(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-virtual {v0, p0, v1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionUpdated(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
 
     .line 2138
     :cond_2
@@ -7871,7 +7871,7 @@
     .line 709
     iget-object v1, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mListenerProxy:Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
 
-    invoke-virtual {v1, p0, p1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionSuppServiceReceived(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsSuppServiceNotification;)V
+    invoke-virtual {v1, p0, p1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionSuppServiceReceived(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsSuppServiceNotification;)V
 
     .line 700
     :cond_1
@@ -7908,7 +7908,7 @@
     .line 753
     iget-object v1, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mListenerProxy:Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
 
-    invoke-virtual {v1, p0, p1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionSuppServiceReceived(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsSuppServiceNotification;)V
+    invoke-virtual {v1, p0, p1}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionSuppServiceReceived(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsSuppServiceNotification;)V
 
     .line 757
     :cond_3
@@ -7920,7 +7920,7 @@
 
     iget-object v2, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mCallProfile:Lcom/android/ims/ImsCallProfile;
 
-    invoke-virtual {v1, p0, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionUpdated(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-virtual {v1, p0, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionUpdated(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
 
     goto :goto_0
 
@@ -7941,7 +7941,7 @@
 
     iget-object v2, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mCallProfile:Lcom/android/ims/ImsCallProfile;
 
-    invoke-virtual {v1, p0, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionHoldReceived(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-virtual {v1, p0, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionHoldReceived(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
 
     .line 723
     iget-object v1, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mContext:Landroid/content/Context;
@@ -7996,7 +7996,7 @@
 
     iget-object v2, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mCallProfile:Lcom/android/ims/ImsCallProfile;
 
-    invoke-virtual {v1, p0, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionResumeReceived(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-virtual {v1, p0, v2}, Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionResumeReceived(Landroid/telephony/ims/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
 
     .line 743
     iget-object v1, p0, Lorg/codeaurora/ims/ImsCallSessionImpl;->mContext:Landroid/content/Context;

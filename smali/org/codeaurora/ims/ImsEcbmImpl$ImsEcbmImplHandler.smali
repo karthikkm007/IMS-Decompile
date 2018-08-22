@@ -115,13 +115,13 @@
 
     iget-object v1, p0, Lorg/codeaurora/ims/ImsEcbmImpl$ImsEcbmImplHandler;->this$0:Lorg/codeaurora/ims/ImsEcbmImpl;
 
-    invoke-static {v1}, Lorg/codeaurora/ims/ImsEcbmImpl;->-get0(Lorg/codeaurora/ims/ImsEcbmImpl;)Lcom/android/ims/internal/IImsEcbmListener;
+    invoke-static {v1}, Lorg/codeaurora/ims/ImsEcbmImpl;->-get0(Lorg/codeaurora/ims/ImsEcbmImpl;)Landroid/telephony/ims/IImsEcbmListener;
 
     move-result-object v1
 
     const/4 v2, 0x1
 
-    invoke-static {v0, v1, v2}, Lorg/codeaurora/ims/ImsEcbmImpl;->-wrap0(Lorg/codeaurora/ims/ImsEcbmImpl;Lcom/android/ims/internal/IImsEcbmListener;Z)V
+    invoke-static {v0, v1, v2}, Lorg/codeaurora/ims/ImsEcbmImpl;->-wrap0(Lorg/codeaurora/ims/ImsEcbmImpl;Landroid/telephony/ims/IImsEcbmListener;Z)V
 
     goto :goto_0
 
@@ -136,13 +136,13 @@
 
     iget-object v1, p0, Lorg/codeaurora/ims/ImsEcbmImpl$ImsEcbmImplHandler;->this$0:Lorg/codeaurora/ims/ImsEcbmImpl;
 
-    invoke-static {v1}, Lorg/codeaurora/ims/ImsEcbmImpl;->-get0(Lorg/codeaurora/ims/ImsEcbmImpl;)Lcom/android/ims/internal/IImsEcbmListener;
+    invoke-static {v1}, Lorg/codeaurora/ims/ImsEcbmImpl;->-get0(Lorg/codeaurora/ims/ImsEcbmImpl;)Landroid/telephony/ims/IImsEcbmListener;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lorg/codeaurora/ims/ImsEcbmImpl;->-wrap0(Lorg/codeaurora/ims/ImsEcbmImpl;Lcom/android/ims/internal/IImsEcbmListener;Z)V
+    invoke-static {v0, v1, v2}, Lorg/codeaurora/ims/ImsEcbmImpl;->-wrap0(Lorg/codeaurora/ims/ImsEcbmImpl;Landroid/telephony/ims/IImsEcbmListener;Z)V
 
     goto :goto_0
 

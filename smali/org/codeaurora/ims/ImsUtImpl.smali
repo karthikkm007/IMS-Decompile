@@ -1,5 +1,5 @@
 .class public Lorg/codeaurora/ims/ImsUtImpl;
-.super Lcom/android/ims/internal/IImsUt$Stub;
+.super Landroid/telephony/ims/IImsUt$Stub;
 .source "ImsUtImpl.java"
 
 
@@ -147,7 +147,7 @@
 
     .prologue
     .line 102
-    invoke-direct {p0}, Lcom/android/ims/internal/IImsUt$Stub;-><init>()V
+    invoke-direct {p0}, Landroid/telephony/ims/IImsUt$Stub;-><init>()V
 
     .line 90
     const-string/jumbo v0, "android.permission.MODIFY_PHONE_STATE"
@@ -1153,9 +1153,9 @@
     return v0
 .end method
 
-.method public setListener(Lcom/android/ims/internal/IImsUtListener;)V
+.method public setListener(Landroid/telephony/ims/IImsUtListener;)V
     .locals 3
-    .param p1, "listener"    # Lcom/android/ims/internal/IImsUtListener;
+    .param p1, "listener"    # Landroid/telephony/ims/IImsUtListener;
 
     .prologue
     .line 546
@@ -1170,7 +1170,7 @@
     .line 547
     iget-object v0, p0, Lorg/codeaurora/ims/ImsUtImpl;->mListenerProxy:Lorg/codeaurora/ims/ImsUtListenerProxy;
 
-    iput-object p1, v0, Lorg/codeaurora/ims/ImsUtListenerProxy;->mListener:Lcom/android/ims/internal/IImsUtListener;
+    iput-object p1, v0, Lorg/codeaurora/ims/ImsUtListenerProxy;->mListener:Landroid/telephony/ims/IImsUtListener;
 
     .line 545
     return-void

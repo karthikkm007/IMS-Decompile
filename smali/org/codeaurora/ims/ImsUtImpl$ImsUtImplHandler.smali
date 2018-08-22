@@ -71,7 +71,7 @@
 
     iget-object v6, p1, Landroid/os/AsyncResult;->userObj:Ljava/lang/Object;
 
-    check-cast v6, Lcom/android/ims/internal/IImsUt;
+    check-cast v6, Landroid/telephony/ims/IImsUt;
 
     .line 631
     iget v8, p2, Landroid/os/Message;->arg1:I
@@ -82,7 +82,7 @@
     invoke-direct {v9, v11, v10}, Lcom/android/ims/ImsReasonInfo;-><init>(II)V
 
     .line 630
-    invoke-virtual {v7, v6, v8, v9}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v7, v6, v8, v9}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     .line 633
     return-void
@@ -147,7 +147,7 @@
 
     iget-object v6, p1, Landroid/os/AsyncResult;->userObj:Ljava/lang/Object;
 
-    check-cast v6, Lcom/android/ims/internal/IImsUt;
+    check-cast v6, Landroid/telephony/ims/IImsUt;
 
     .line 667
     iget v8, p2, Landroid/os/Message;->arg1:I
@@ -158,7 +158,7 @@
     invoke-direct {v9, v11, v10}, Lcom/android/ims/ImsReasonInfo;-><init>(II)V
 
     .line 666
-    invoke-virtual {v7, v6, v8, v9}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v7, v6, v8, v9}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     .line 669
     return-void
@@ -226,13 +226,13 @@
 
     iget-object v6, p1, Landroid/os/AsyncResult;->userObj:Ljava/lang/Object;
 
-    check-cast v6, Lcom/android/ims/internal/IImsUt;
+    check-cast v6, Landroid/telephony/ims/IImsUt;
 
     .line 680
     iget v8, p2, Landroid/os/Message;->arg1:I
 
     .line 679
-    invoke-virtual {v7, v6, v8, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationCallForwardQueried(Lcom/android/ims/internal/IImsUt;I[Lcom/android/ims/ImsCallForwardInfo;)V
+    invoke-virtual {v7, v6, v8, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationCallForwardQueried(Landroid/telephony/ims/IImsUt;I[Lcom/android/ims/ImsCallForwardInfo;)V
 
     .line 624
     return-void
@@ -362,7 +362,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 704
     move-object/from16 v0, p1
@@ -393,7 +393,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto :goto_0
 
@@ -450,7 +450,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 714
     move-object/from16 v0, p1
@@ -480,7 +480,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     .line 716
     return-void
@@ -518,7 +518,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 721
     move-object/from16 v0, p1
@@ -545,7 +545,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -707,7 +707,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     move-object/from16 v0, p1
 
@@ -724,7 +724,7 @@
 
     move-object/from16 v3, v29
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationCallBarringQueried(Lcom/android/ims/internal/IImsUt;I[Lcom/android/ims/ImsSsInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationCallBarringQueried(Landroid/telephony/ims/IImsUt;I[Lcom/android/ims/ImsSsInfo;)V
 
     goto/16 :goto_0
 
@@ -818,7 +818,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     move-object/from16 v0, p1
 
@@ -835,7 +835,7 @@
 
     move-object/from16 v3, v30
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationCallBarringQueried(Lcom/android/ims/internal/IImsUt;I[Lcom/android/ims/ImsSsInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationCallBarringQueried(Landroid/telephony/ims/IImsUt;I[Lcom/android/ims/ImsSsInfo;)V
 
     goto/16 :goto_0
 
@@ -893,7 +893,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 771
     move-object/from16 v0, p1
@@ -920,7 +920,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -997,7 +997,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 790
     move-object/from16 v0, p1
@@ -1028,7 +1028,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -1085,7 +1085,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 800
     move-object/from16 v0, p1
@@ -1115,7 +1115,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     .line 802
     return-void
@@ -1137,7 +1137,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     move-object/from16 v0, p1
 
@@ -1151,7 +1151,7 @@
 
     move/from16 v2, v33
 
-    invoke-virtual {v0, v1, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Lcom/android/ims/internal/IImsUt;I)V
+    invoke-virtual {v0, v1, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Landroid/telephony/ims/IImsUt;I)V
 
     goto/16 :goto_0
 
@@ -1172,7 +1172,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     move-object/from16 v0, p1
 
@@ -1186,7 +1186,7 @@
 
     move/from16 v2, v33
 
-    invoke-virtual {v0, v1, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Lcom/android/ims/internal/IImsUt;I)V
+    invoke-virtual {v0, v1, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Landroid/telephony/ims/IImsUt;I)V
 
     goto/16 :goto_0
 
@@ -1334,7 +1334,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 839
     move-object/from16 v0, p1
@@ -1364,7 +1364,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -1420,7 +1420,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 845
     move-object/from16 v0, p1
@@ -1451,7 +1451,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -1504,7 +1504,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     move-object/from16 v0, p1
 
@@ -1518,7 +1518,7 @@
 
     move/from16 v2, v33
 
-    invoke-virtual {v0, v1, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Lcom/android/ims/internal/IImsUt;I)V
+    invoke-virtual {v0, v1, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Landroid/telephony/ims/IImsUt;I)V
 
     goto/16 :goto_0
 
@@ -1595,7 +1595,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 868
     move-object/from16 v0, p1
@@ -1626,7 +1626,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -1714,7 +1714,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 883
     move-object/from16 v0, p1
@@ -1741,7 +1741,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     .line 885
     return-void
@@ -1840,7 +1840,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 947
     move-object/from16 v0, p1
@@ -1867,7 +1867,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     .line 949
     return-void
@@ -2101,7 +2101,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 960
     move-object/from16 v0, p1
@@ -2117,7 +2117,7 @@
 
     move/from16 v2, v33
 
-    invoke-virtual {v0, v1, v2, v7}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationCallForwardQueried(Lcom/android/ims/internal/IImsUt;I[Lcom/android/ims/ImsCallForwardInfo;)V
+    invoke-virtual {v0, v1, v2, v7}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationCallForwardQueried(Landroid/telephony/ims/IImsUt;I[Lcom/android/ims/ImsCallForwardInfo;)V
 
     goto/16 :goto_0
 
@@ -2150,7 +2150,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 966
     move-object/from16 v0, p1
@@ -2177,7 +2177,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -2254,7 +2254,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 983
     move-object/from16 v0, p1
@@ -2285,7 +2285,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -2375,7 +2375,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 1016
     move-object/from16 v0, p1
@@ -2391,7 +2391,7 @@
 
     move/from16 v2, v33
 
-    invoke-virtual {v0, v1, v2, v9}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationCallWaitingQueried(Lcom/android/ims/internal/IImsUt;I[Lcom/android/ims/ImsSsInfo;)V
+    invoke-virtual {v0, v1, v2, v9}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationCallWaitingQueried(Landroid/telephony/ims/IImsUt;I[Lcom/android/ims/ImsSsInfo;)V
 
     goto/16 :goto_0
 
@@ -2447,7 +2447,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 1006
     move-object/from16 v0, p1
@@ -2474,7 +2474,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     .line 1008
     return-void
@@ -2507,7 +2507,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 1022
     move-object/from16 v0, p1
@@ -2534,7 +2534,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -2627,7 +2627,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 1042
     move-object/from16 v0, p1
@@ -2658,7 +2658,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -2719,7 +2719,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     move-object/from16 v0, p1
 
@@ -2735,7 +2735,7 @@
 
     move-object/from16 v3, v16
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueried(Lcom/android/ims/internal/IImsUt;ILandroid/os/Bundle;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueried(Landroid/telephony/ims/IImsUt;ILandroid/os/Bundle;)V
 
     goto/16 :goto_0
 
@@ -2848,7 +2848,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 1072
     move-object/from16 v0, p1
@@ -2878,7 +2878,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -2965,7 +2965,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 1083
     move-object/from16 v0, p1
@@ -2981,7 +2981,7 @@
 
     move/from16 v2, v33
 
-    invoke-virtual {v0, v1, v2, v14}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueried(Lcom/android/ims/internal/IImsUt;ILandroid/os/Bundle;)V
+    invoke-virtual {v0, v1, v2, v14}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueried(Landroid/telephony/ims/IImsUt;ILandroid/os/Bundle;)V
 
     goto/16 :goto_0
 
@@ -3097,7 +3097,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 1102
     move-object/from16 v0, p1
@@ -3127,7 +3127,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -3214,7 +3214,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 1113
     move-object/from16 v0, p1
@@ -3230,7 +3230,7 @@
 
     move/from16 v2, v33
 
-    invoke-virtual {v0, v1, v2, v14}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueried(Lcom/android/ims/internal/IImsUt;ILandroid/os/Bundle;)V
+    invoke-virtual {v0, v1, v2, v14}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueried(Landroid/telephony/ims/IImsUt;ILandroid/os/Bundle;)V
 
     goto/16 :goto_0
 
@@ -3310,7 +3310,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 1130
     move-object/from16 v0, p1
@@ -3341,7 +3341,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -3398,7 +3398,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 1142
     move-object/from16 v0, p1
@@ -3428,7 +3428,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueryFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -3555,7 +3555,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 1158
     move-object/from16 v0, p1
@@ -3571,7 +3571,7 @@
 
     move/from16 v2, v33
 
-    invoke-virtual {v0, v1, v2, v14}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueried(Lcom/android/ims/internal/IImsUt;ILandroid/os/Bundle;)V
+    invoke-virtual {v0, v1, v2, v14}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationQueried(Landroid/telephony/ims/IImsUt;ILandroid/os/Bundle;)V
 
     goto/16 :goto_0
 
@@ -3668,7 +3668,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 1192
     move-object/from16 v0, p1
@@ -3699,7 +3699,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -3868,7 +3868,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     .line 1206
     move-object/from16 v0, p1
@@ -3898,7 +3898,7 @@
 
     move-object/from16 v3, v34
 
-    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Lcom/android/ims/internal/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
+    invoke-virtual {v0, v1, v2, v3}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdateFailed(Landroid/telephony/ims/IImsUt;ILcom/android/ims/ImsReasonInfo;)V
 
     goto/16 :goto_0
 
@@ -3919,7 +3919,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     move-object/from16 v0, p1
 
@@ -3933,7 +3933,7 @@
 
     move/from16 v2, v33
 
-    invoke-virtual {v0, v1, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Lcom/android/ims/internal/IImsUt;I)V
+    invoke-virtual {v0, v1, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Landroid/telephony/ims/IImsUt;I)V
 
     goto/16 :goto_0
 
@@ -3954,7 +3954,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     move-object/from16 v0, p1
 
@@ -3968,7 +3968,7 @@
 
     move/from16 v2, v33
 
-    invoke-virtual {v0, v1, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Lcom/android/ims/internal/IImsUt;I)V
+    invoke-virtual {v0, v1, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Landroid/telephony/ims/IImsUt;I)V
 
     goto/16 :goto_0
 
@@ -3988,7 +3988,7 @@
 
     move-object/from16 v31, v0
 
-    check-cast v31, Lcom/android/ims/internal/IImsUt;
+    check-cast v31, Landroid/telephony/ims/IImsUt;
 
     move-object/from16 v0, p1
 
@@ -4002,7 +4002,7 @@
 
     move/from16 v2, v33
 
-    invoke-virtual {v0, v1, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Lcom/android/ims/internal/IImsUt;I)V
+    invoke-virtual {v0, v1, v2}, Lorg/codeaurora/ims/ImsUtListenerProxy;->utConfigurationUpdated(Landroid/telephony/ims/IImsUt;I)V
 
     goto/16 :goto_0
 

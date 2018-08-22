@@ -65,10 +65,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/ims/internal/IImsRegistrationListener;
+    check-cast v0, Landroid/telephony/ims/IImsRegistrationListener;
 
     .line 473
-    .local v0, "listener":Lcom/android/ims/internal/IImsRegistrationListener;
+    .local v0, "listener":Landroid/telephony/ims/IImsRegistrationListener;
     iget-object v3, p0, Lorg/codeaurora/ims/ImsServiceSub$1;->this$0:Lorg/codeaurora/ims/ImsServiceSub;
 
     iget-object v3, v3, Lorg/codeaurora/ims/ImsServiceSub;->mEnabledFeatures:[I
@@ -80,14 +80,14 @@
     .line 472
     const/4 v5, 0x1
 
-    invoke-interface {v0, v5, v3, v4}, Lcom/android/ims/internal/IImsRegistrationListener;->registrationFeatureCapabilityChanged(I[I[I)V
+    invoke-interface {v0, v5, v3, v4}, Landroid/telephony/ims/IImsRegistrationListener;->registrationFeatureCapabilityChanged(I[I[I)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
     .line 475
-    .end local v0    # "listener":Lcom/android/ims/internal/IImsRegistrationListener;
+    .end local v0    # "listener":Landroid/telephony/ims/IImsRegistrationListener;
     .end local v1    # "listener$iterator":Ljava/util/Iterator;
     :catch_0
     move-exception v2
