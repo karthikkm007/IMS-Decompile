@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionResumeReceived(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    value = Lorg/codeaurora/ims/ImsCallSessionListenerProxy;->callSessionResumeReceived(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,20 +20,20 @@
 # instance fields
 .field final synthetic this$0:Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
 
-.field final synthetic val$profile:Lcom/android/ims/ImsCallProfile;
+.field final synthetic val$profile:Landroid/telephony/ims/ImsCallProfile;
 
 .field final synthetic val$session:Lcom/android/ims/internal/IImsCallSession;
 
 
 # direct methods
-.method constructor <init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+.method constructor <init>(Lorg/codeaurora/ims/ImsCallSessionListenerProxy;Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
     .locals 0
 
     iput-object p1, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$13;->this$0:Lorg/codeaurora/ims/ImsCallSessionListenerProxy;
 
     iput-object p2, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$13;->val$session:Lcom/android/ims/internal/IImsCallSession;
 
-    iput-object p3, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$13;->val$profile:Lcom/android/ims/ImsCallProfile;
+    iput-object p3, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$13;->val$profile:Landroid/telephony/ims/ImsCallProfile;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,9 +52,9 @@
 
     iget-object v2, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$13;->val$session:Lcom/android/ims/internal/IImsCallSession;
 
-    iget-object v3, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$13;->val$profile:Lcom/android/ims/ImsCallProfile;
+    iget-object v3, p0, Lorg/codeaurora/ims/ImsCallSessionListenerProxy$13;->val$profile:Landroid/telephony/ims/ImsCallProfile;
 
-    invoke-interface {v1, v2, v3}, Lcom/android/ims/internal/IImsCallSessionListener;->callSessionResumeReceived(Lcom/android/ims/internal/IImsCallSession;Lcom/android/ims/ImsCallProfile;)V
+    invoke-interface {v1, v2, v3}, Lcom/android/ims/internal/IImsCallSessionListener;->callSessionResumeReceived(Lcom/android/ims/internal/IImsCallSession;Landroid/telephony/ims/ImsCallProfile;)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 

@@ -475,10 +475,10 @@
     return-void
 .end method
 
-.method static synthetic -wrap32(Lorg/codeaurora/ims/ImsServiceSub;Lcom/android/ims/ImsReasonInfo;I)V
+.method static synthetic -wrap32(Lorg/codeaurora/ims/ImsServiceSub;Landroid/telephony/ims/ImsReasonInfo;I)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lorg/codeaurora/ims/ImsServiceSub;->sendBroadcastForDisconnected(Lcom/android/ims/ImsReasonInfo;I)V
+    invoke-direct {p0, p1, p2}, Lorg/codeaurora/ims/ImsServiceSub;->sendBroadcastForDisconnected(Landroid/telephony/ims/ImsReasonInfo;I)V
 
     return-void
 .end method
@@ -4729,7 +4729,7 @@
     return-void
 .end method
 
-.method private sendBroadcastForDisconnected(Lcom/android/ims/ImsReasonInfo;I)V
+.method private sendBroadcastForDisconnected(Landroid/telephony/ims/ImsReasonInfo;I)V
     .locals 3
 
     new-instance v0, Landroid/content/Intent;
@@ -5057,7 +5057,7 @@
     goto :goto_0
 .end method
 
-.method public createCallProfile(III)Lcom/android/ims/ImsCallProfile;
+.method public createCallProfile(III)Landroid/telephony/ims/ImsCallProfile;
     .locals 4
 
     const/4 v0, 0x0
@@ -5084,14 +5084,14 @@
     return-object v0
 
     :cond_0
-    new-instance v0, Lcom/android/ims/ImsCallProfile;
+    new-instance v0, Landroid/telephony/ims/ImsCallProfile;
 
-    invoke-direct {v0, p2, p3}, Lcom/android/ims/ImsCallProfile;-><init>(II)V
+    invoke-direct {v0, p2, p3}, Landroid/telephony/ims/ImsCallProfile;-><init>(II)V
 
     goto :goto_0
 .end method
 
-.method public createCallSession(ILcom/android/ims/ImsCallProfile;Lcom/android/ims/internal/IImsCallSessionListener;)Lorg/codeaurora/ims/ImsCallSessionImpl;
+.method public createCallSession(ILandroid/telephony/ims/ImsCallProfile;Lcom/android/ims/internal/IImsCallSessionListener;)Lorg/codeaurora/ims/ImsCallSessionImpl;
     .locals 4
 
     const/4 v0, 0x0
@@ -5134,7 +5134,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {v1, p2, p3}, Lorg/codeaurora/ims/ImsServiceClassTracker;->createCallSession(Lcom/android/ims/ImsCallProfile;Lcom/android/ims/internal/IImsCallSessionListener;)Lorg/codeaurora/ims/ImsCallSessionImpl;
+    invoke-virtual {v1, p2, p3}, Lorg/codeaurora/ims/ImsServiceClassTracker;->createCallSession(Landroid/telephony/ims/ImsCallProfile;Lcom/android/ims/internal/IImsCallSessionListener;)Lorg/codeaurora/ims/ImsCallSessionImpl;
 
     move-result-object v0
 

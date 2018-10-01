@@ -246,17 +246,17 @@
 
     :cond_1
     :goto_4
-    new-instance v3, Lcom/android/ims/ImsReasonInfo;
+    new-instance v3, Landroid/telephony/ims/ImsReasonInfo;
 
     const/16 v9, 0x3e8
 
-    invoke-direct {v3, v9, v0, v1}, Lcom/android/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
+    invoke-direct {v3, v9, v0, v1}, Landroid/telephony/ims/ImsReasonInfo;-><init>(IILjava/lang/String;)V
 
     iget-object v9, p0, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler;->this$0:Lorg/codeaurora/ims/ImsServiceSub;
 
-    invoke-static {v9, v3, v4}, Lorg/codeaurora/ims/ImsServiceSub;->-wrap32(Lorg/codeaurora/ims/ImsServiceSub;Lcom/android/ims/ImsReasonInfo;I)V
+    invoke-static {v9, v3, v4}, Lorg/codeaurora/ims/ImsServiceSub;->-wrap32(Lorg/codeaurora/ims/ImsServiceSub;Landroid/telephony/ims/ImsReasonInfo;I)V
 
-    invoke-direct {p0, v4, v3, v2}, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler;->notifyRegChange(ILcom/android/ims/ImsReasonInfo;I)V
+    invoke-direct {p0, v4, v3, v2}, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler;->notifyRegChange(ILandroid/telephony/ims/ImsReasonInfo;I)V
 
     if-eqz v7, :cond_2
 
@@ -328,12 +328,12 @@
     return-void
 .end method
 
-.method private notifyRegChange(ILcom/android/ims/ImsReasonInfo;I)V
+.method private notifyRegChange(ILandroid/telephony/ims/ImsReasonInfo;I)V
     .locals 2
 
     new-instance v0, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler$1;
 
-    invoke-direct {v0, p0, p1, p3, p2}, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler$1;-><init>(Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler;IILcom/android/ims/ImsReasonInfo;)V
+    invoke-direct {v0, p0, p1, p3, p2}, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler$1;-><init>(Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler;IILandroid/telephony/ims/ImsReasonInfo;)V
 
     iget-object v1, p0, Lorg/codeaurora/ims/ImsServiceSub$ImsServiceSubHandler;->this$0:Lorg/codeaurora/ims/ImsServiceSub;
 

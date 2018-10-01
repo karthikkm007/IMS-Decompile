@@ -77,11 +77,11 @@
 
     iget-object v2, p0, Lorg/codeaurora/ims/ImsConfigImpl$ImsConfigImplHandler;->this$0:Lorg/codeaurora/ims/ImsConfigImpl;
 
-    invoke-static {v2, v0}, Lorg/codeaurora/ims/ImsConfigImpl;->-wrap0(Lorg/codeaurora/ims/ImsConfigImpl;Landroid/os/AsyncResult;)Lcom/android/ims/ImsConfigListener;
+    invoke-static {v2, v0}, Lorg/codeaurora/ims/ImsConfigImpl;->-wrap0(Lorg/codeaurora/ims/ImsConfigImpl;Landroid/os/AsyncResult;)Landroid/telephony/ims/ImsConfigListener;
 
     move-result-object v2
 
-    invoke-static {v1, v2, v0}, Lorg/codeaurora/ims/ImsConfigImpl;->-wrap2(Lorg/codeaurora/ims/ImsConfigImpl;Lcom/android/ims/ImsConfigListener;Landroid/os/AsyncResult;)V
+    invoke-static {v1, v2, v0}, Lorg/codeaurora/ims/ImsConfigImpl;->-wrap2(Lorg/codeaurora/ims/ImsConfigImpl;Landroid/telephony/ims/ImsConfigListener;Landroid/os/AsyncResult;)V
 
     goto :goto_0
 
@@ -90,11 +90,11 @@
 
     iget-object v2, p0, Lorg/codeaurora/ims/ImsConfigImpl$ImsConfigImplHandler;->this$0:Lorg/codeaurora/ims/ImsConfigImpl;
 
-    invoke-static {v2, v0}, Lorg/codeaurora/ims/ImsConfigImpl;->-wrap0(Lorg/codeaurora/ims/ImsConfigImpl;Landroid/os/AsyncResult;)Lcom/android/ims/ImsConfigListener;
+    invoke-static {v2, v0}, Lorg/codeaurora/ims/ImsConfigImpl;->-wrap0(Lorg/codeaurora/ims/ImsConfigImpl;Landroid/os/AsyncResult;)Landroid/telephony/ims/ImsConfigListener;
 
     move-result-object v2
 
-    invoke-static {v1, v2, v0}, Lorg/codeaurora/ims/ImsConfigImpl;->-wrap4(Lorg/codeaurora/ims/ImsConfigImpl;Lcom/android/ims/ImsConfigListener;Landroid/os/AsyncResult;)V
+    invoke-static {v1, v2, v0}, Lorg/codeaurora/ims/ImsConfigImpl;->-wrap4(Lorg/codeaurora/ims/ImsConfigImpl;Landroid/telephony/ims/ImsConfigListener;Landroid/os/AsyncResult;)V
 
     goto :goto_0
 
@@ -103,11 +103,11 @@
 
     iget-object v2, p0, Lorg/codeaurora/ims/ImsConfigImpl$ImsConfigImplHandler;->this$0:Lorg/codeaurora/ims/ImsConfigImpl;
 
-    invoke-static {v2, v0}, Lorg/codeaurora/ims/ImsConfigImpl;->-wrap0(Lorg/codeaurora/ims/ImsConfigImpl;Landroid/os/AsyncResult;)Lcom/android/ims/ImsConfigListener;
+    invoke-static {v2, v0}, Lorg/codeaurora/ims/ImsConfigImpl;->-wrap0(Lorg/codeaurora/ims/ImsConfigImpl;Landroid/os/AsyncResult;)Landroid/telephony/ims/ImsConfigListener;
 
     move-result-object v2
 
-    invoke-static {v1, v2, v0}, Lorg/codeaurora/ims/ImsConfigImpl;->-wrap3(Lorg/codeaurora/ims/ImsConfigImpl;Lcom/android/ims/ImsConfigListener;Landroid/os/AsyncResult;)V
+    invoke-static {v1, v2, v0}, Lorg/codeaurora/ims/ImsConfigImpl;->-wrap3(Lorg/codeaurora/ims/ImsConfigImpl;Landroid/telephony/ims/ImsConfigListener;Landroid/os/AsyncResult;)V
 
     goto :goto_0
 

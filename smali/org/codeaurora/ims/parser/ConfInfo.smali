@@ -1492,7 +1492,7 @@
     return-void
 .end method
 
-.method public getConfUriList()Lcom/android/ims/ImsConferenceState;
+.method public getConfUriList()Landroid/telephony/ims/ImsConferenceState;
     .locals 13
 
     const/4 v12, 0x3
@@ -1734,13 +1734,13 @@
     :cond_2
     invoke-virtual {v3, v10}, Landroid/os/Parcel;->setDataPosition(I)V
 
-    sget-object v7, Lcom/android/ims/ImsConferenceState;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object v7, Landroid/telephony/ims/ImsConferenceState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {v7, v3}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
     move-result-object v7
 
-    check-cast v7, Lcom/android/ims/ImsConferenceState;
+    check-cast v7, Landroid/telephony/ims/ImsConferenceState;
 
     return-object v7
 
