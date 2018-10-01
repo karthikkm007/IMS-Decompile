@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_111 (Oracle Corporation)
+
+Name: res/drawable/ic_qs_wifi_calling_off.xml
+SHA1-Digest: zx0k81rxgPLMYCS4v+LMtk1sAVo=
+
+Name: res/drawable-xhdpi-v4/ims_state.png
+SHA1-Digest: oQ5xtcxS/+oYwYMllx9IrzAT/mM=
+
+Name: AndroidManifest.xml
+SHA1-Digest: Vebe5OVfNFXXEJIh/RNqiN6/Ktg=
+
+Name: res/drawable-v21/ic_qs_wifi_calling_off.xml
+SHA1-Digest: QqMp2X/JRDyf8s5hLNaXdl2W8yA=
+
+Name: res/drawable-xhdpi-v4/volte_icon
+SHA1-Digest: qCZ5kBs/tKj2kyW2mYZADBU/GFE=
+
+Name: res/drawable-v21/ic_qs_wifi_calling_on.xml
+SHA1-Digest: SiZKFnsSAhVegJSZJzRFW0md/pA=
+
+Name: resources.arsc
+SHA1-Digest: 7Ee0VXoQphwCezbX7BvTr3fzrQY=
+
+Name: res/drawable/ic_qs_wifi_calling_on.xml
+SHA1-Digest: zx0k81rxgPLMYCS4v+LMtk1sAVo=
+
+Name: classes.dex
+SHA1-Digest: a1IdzObumyBLn1AnrASfD5Qz+PY=
+

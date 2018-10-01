@@ -1,0 +1,32 @@
+Signature-Version: 1.0
+X-Android-APK-Signed: 2
+SHA1-Digest-Manifest: LDdnSP0A6m58D8mkwDbc8MCQbaY=
+Created-By: 1.0 (Android SignApk)
+
+Name: res/drawable/ic_qs_wifi_calling_off.xml
+SHA1-Digest: AAMJC4RPSsvAK7KgCWmy4V+JQzk=
+
+Name: res/drawable-xhdpi-v4/ims_state.png
+SHA1-Digest: GMcXKVnY61t3BipvQpuZYfn4JRs=
+
+Name: AndroidManifest.xml
+SHA1-Digest: S8SNVZx/NypJmkjMP030hmLs2GM=
+
+Name: res/drawable-v21/ic_qs_wifi_calling_off.xml
+SHA1-Digest: 4U6GtO1bLh/TwrqGW+T7MxzyCAI=
+
+Name: res/drawable-xhdpi-v4/volte_icon
+SHA1-Digest: RdfZsUTzeianbObcvTd7uaRzP0o=
+
+Name: res/drawable-v21/ic_qs_wifi_calling_on.xml
+SHA1-Digest: 4iVDuqLFwrLDbxI3sLYXC7ZAt1g=
+
+Name: resources.arsc
+SHA1-Digest: wwusBtjVhBxctBNvWLvJCAEgHJE=
+
+Name: res/drawable/ic_qs_wifi_calling_on.xml
+SHA1-Digest: 7UnU2jEfNFMz6Y5iBZ6d8jIdkPQ=
+
+Name: classes.dex
+SHA1-Digest: 8Ac+xsXpd47DpIvudul3Cz3vRoM=
+
